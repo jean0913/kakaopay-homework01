@@ -1,9 +1,11 @@
+/*참여하기 버튼*/
 function setMainBtn(){
 	$(".main-btn").click(function(){
 	 	$(".send-layer").show();
 	 	 setBounceEffect($('.door-top'), $(".door-bottom"));
 	 })
 }
+/*송금하기 레이어 닫기*/
 function setCloseLayer(){
 	$(".close-btn").click(function(){
 	 	$(".send-layer").hide();
@@ -11,7 +13,7 @@ function setCloseLayer(){
 	 	$('.door-top').css("bottom","-100px")
 	 })
 }	 	 
-
+/*레이어 바운스 효과*/
  function setBounceEffect(tp,bt) {
   var interval = 100;
   var distance = 3;
@@ -26,13 +28,13 @@ function setCloseLayer(){
       $(bt).animate({ bottom: 0}, interval);
   }
 }
-
+/*로딩시*/
 $(window).load(function(){
     $(".lorder-warp").fadeOut();
     dropCoin();
  
 });
-
+/*메인 코인 drop*/
 function dropCoin(){
    var $liList = $(".move-coins li");
    $liList.each(function(index) {
@@ -41,20 +43,17 @@ function dropCoin(){
     $(coin).addClass("drop");
   });
 }
-
+/*인트로코인 애니메이션 감지*/
 function whichTransitionEvent(){
  var ani = document.querySelector(".coin-L03");
-
 ani.addEventListener("animationstart", function(e) {
 }, false);
-
 ani.addEventListener("animationend", function(e) {
     $(".drop-coins").hide();
     $(".m-wrap").css("overflow-y", "scroll");
     }, false);
 }
-   
-
+/*스크롤시 이벤트*/   
 function scrollEvent(){
   $(".m-wrap").scroll(function() {
   var scroll = $(this).scrollTop();
@@ -63,11 +62,11 @@ function scrollEvent(){
     } else {
       //$(".neon-border").removeClass("blink");
     }
-   
       var pos = 10-scroll;
       $(".main-btn").css("bottom",pos);
   });
 }
+
 $(function(){
 	setMainBtn();
 	setCloseLayer();
