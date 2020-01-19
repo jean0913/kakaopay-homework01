@@ -53,21 +53,23 @@
   }
   100% {
    opacity:1;
-
   }
 }
 /*yellow neon*/
 @keyframes neon_border {
   0% {
-   opacity:0;
+    opacity:1;
   }
-  33%{
-  	opacity:1;
-  }
-  66%{
+  5%{
   	opacity:0;
   }
-  100% {
+  50%{
+    opacity:1;
+  }
+  75% {
+   opacity:0;
+  }
+   100% {
    opacity:1;
   }
 }
@@ -75,10 +77,8 @@
 @keyframes spark {
   0% {
    opacity:0;
-  
   }
   100% {
    opacity:1;
-
   }
 }

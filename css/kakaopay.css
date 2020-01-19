@@ -69,15 +69,15 @@ h1{position:absolute;top:12px;left:50%;width:88px;height:11px;margin-left:-44px;
 
 /*explain box*/
 .bx-explain{width:227px;height:119px;margin:208px auto 0px auto;background:url(../images/bx_explain.png) 0px 0px no-repeat;background-size:100%;}
-.bx-share{position:relative;margin:50px auto 0px auto;width:347px;height:95px;}
 
 /*friends share*/
-.lst-share{overflow:hidden;width:287px;height:63px;padding:0px 25px;background:url(../images/bg_share.png) 0px 0px no-repeat;background-size:100%;}
+.bx-share{position:relative;margin:50px auto 0px auto;width:337px;height:95px;}
+.lst-share{clear:both;width:277px;height:63px;padding:0px 25px;background:url(../images/bg_share.png) 0px 0px no-repeat;background-size:100%;}
 .lst-share li{float:left;width:25%;}
 .lst-share li a{display:block;height:63px;}
 .neon-border{position:absolute;top:-10px;left:-5px;width:347px;height:95px;background:url(../images/border_share_off.png) 0px 0px no-repeat;background-size:100%;}
-.neon-border.on{opacity:1;}
-.neon-border.blink:before{content:"";position:absolute;top:-15px;left:-1px;width:347px;height:95px;background:url(../images/border_share_on.png) 0px 0px no-repeat;background-size:100%;animation: neon_border 0.2s 1s linear both;}
+.neon-border.on:before{content:"";position:absolute;top:-15px;left:-1px;width:347px;height:95px;background:url(../images/border_share_on.png) 0px 0px no-repeat;background-size:100%;}
+.neon-border.blink:before{animation: neon_border 0.2s 1s ease-in both;}
 
 /*bottom conis image*/
 .bottom-coins{width:100%;margin-top:30px;}
