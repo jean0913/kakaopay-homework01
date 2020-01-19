@@ -43,7 +43,7 @@ h1{position:absolute;top:12px;left:50%;width:88px;height:11px;margin-left:-44px;
 
 /*main coin parellax scroll*/
 .move-coins img{width:100%;}
-[class*="coin0"]{top:-400px;}
+[class*="coin0"]{top:-600px;}
 [class*="coin0"].drop{transition-property: top;transition-delay:1s;transition-duration:0.5s;}
 .coin01{position:absolute;left:0px;width:48px;transform-origin:top;}
 .coin01.drop{top:-4px;left:-19%;transform: translateZ(-0.4px) scale(1.4);}
@@ -54,9 +54,9 @@ h1{position:absolute;top:12px;left:50%;width:88px;height:11px;margin-left:-44px;
 .coin04{position:absolute;right:35px;width:32px;z-index:1;}
 .coin04.drop{top:168px;right:-8%;transform: translateZ(-0.7px) scale(1.7);}
 .coin05{position:absolute;left:0px;width:22px;}
-.coin05.drop{top:300px;left:-24%;transform: translateZ(-0.5px) scale(1.5);}
+.coin05.drop{top:300px;left:-25%;transform: translateZ(-0.5px) scale(1.5);}
 .coin06{position:absolute;right:0px;width:57px;}
-.coin06.drop{top:330px;right:-16%; transform: translateZ(-0.4px) scale(1.4);}
+.coin06.drop{top:330px;right:-19%; transform: translateZ(-0.4px) scale(1.4);}
 
 /*paper money set*/
 .money-set{position:relative;margin-top:8px;transition-duration: 0.5s;}
